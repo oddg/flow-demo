@@ -1,5 +1,9 @@
 // @flow 
 
+/*::
+export opaque type AddonT = string; 
+*/
+
 const CHEAP /* : AddonT */ = 'cheap';
 const EXPENSIVE /* : AddonT */ = 'expensive';
 
