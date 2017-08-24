@@ -8,7 +8,7 @@ import type {PlanT} from './plan.js';
 
 function getAmount(nbVisits /*: number*/ , plan /*: PlanT*/, addon /*: AddonT */)/*: number */ {
   let perVisitCost = Plan.getPrice(plan);
-  let addonCost = Addon.getPrice(plan);
+  let addonCost = Addon.getPrice(addon);
   return nbVisits * perVisitCost + addonCost;
 }
 
