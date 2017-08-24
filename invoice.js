@@ -1,9 +1,11 @@
 // @flow
 const Plan = require('./plan.js');
+const Addon = require('./addon.js');
 
-function getAmount(nbVisits /*: number*/ , plan /*: PlanT*/)/*: number */ {
+function getAmount(nbVisits /*: number*/ , plan /*: PlanT*/, addon /*: AddonT */)/*: number */ {
   let perVisitCost = Plan.getPrice(plan);
-  return nbVisits * perVisitCost;
+  let addonCost = Addon.getPrice(addon);
+  return nbVisits * perVisitCost + addonCost;
 }
 
 module.exports = {
