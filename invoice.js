@@ -1,7 +1,9 @@
 // @flow
+const Plan = require('./plan.js');
 
 function getAmount(nbVisits /*: number*/ , plan /*: string*/) {
-  return nbVisits * plan;
+  let perVisitCost = Plan.getPrice(plan);
+  return nbVisits * perVisitCost;
 }
 
 module.exports = {
