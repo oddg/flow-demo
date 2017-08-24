@@ -1,3 +1,5 @@
+// @flow
+
 const Plan = require('./plan.js');
 const Invoice = require('./invoice.js');
 
