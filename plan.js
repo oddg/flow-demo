@@ -1,5 +1,9 @@
 // @flow
 
+/*::
+export opaque type PlanT = string;
+*/
+
 const HIGH_VOLUME /*: PlanT */ = 'high_volume';
 const LOW_VOLUME /*: PlanT */ = 'low_volume';
 
